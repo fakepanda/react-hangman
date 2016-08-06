@@ -3,7 +3,8 @@
   "version": "0.2.0",
   "description": "Hangman game using React.js",
   "scripts": {
-    "start": "webpack-dev-server --hot --inline"
+    "build": "webpack -d",
+    "dev": "webpack-dev-server --hot --inline --config webpack-dev.config.js"
   },
   "author": {
     "name": "Gen Edwards"
