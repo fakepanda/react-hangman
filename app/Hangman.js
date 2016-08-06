@@ -1,0 +1,33 @@
+import React from 'react';
+
+/**
+ * Count down timer displaying the remaining time till the game ends.
+ */
+const Hangman = (props) => {
+  let ouch = ' ';
+
+  if (props.gameState === 'lose') {
+    return (
+      <div className="hangman">
+        OMG!! I said OUCH, you killed me!!
+      </div>
+    );
+  }
+
+  for (let i = 0; i < props.incorrectCount; i++) {
+    ouch += 'Ouch!  ';
+  }
+
+  return (
+    <div className="hangman">
+      <span>{ouch}</span>
+    </div>
+  );
+};
+
+Hangman.propTypes = {
+  gameState: React.PropTypes.string,
+  incorrectCount: React.PropTypes.number,
+};
+
+export default Hangman;

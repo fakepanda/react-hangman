@@ -1,0 +1,45 @@
+@import url(//fonts.googleapis.com/css?family=Inconsolata);
+
+.answer {
+  /*width: 100%;
+  height: 100%;*/
+  display: flex;
+}
+
+.answer-char {
+  font-family: Inconsolata;
+  font-size: 64px;
+  width: 32px;
+  margin: 4px;
+}
+
+.hangman {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.letter {
+  font-size: 32px;
+  margin: 6px;
+  top: 4px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: pointer;
+
+  /*animation: moving 10s alternate infinite ease-in;*/
+}
+
+.letter.revealed {
+  color: red;
+}
+
+.letters-area {
+  display: flex;
+}
+
+@keyframes moving {
+  0% {top: 0px; left: 0px;}
+  100% {top: 100px;}
+}
