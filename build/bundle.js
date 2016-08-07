@@ -32983,7 +32983,7 @@
 	  return _react2.default.createElement(
 	    "div",
 	    { className: "output" },
-	    "Topic: A character from the HBO series \"Game of Thrones\""
+	    "Topic: A character from the \"Game of Thrones\" series."
 	  );
 	};
 	
