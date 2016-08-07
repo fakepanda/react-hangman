@@ -4,8 +4,8 @@ import Answer from './Answer';
 import Hangman from './Hangman';
 import Letters from './Letters';
 import Output from './Output';
-import { restaurants } from './answerList';
-// import { countries, restaurants } from './answerList';
+// import { restaurants } from './answerList';
+import got from './got';
 
 /**
  * The app container, lord of all components. Probably the one with the state.
@@ -13,7 +13,7 @@ import { restaurants } from './answerList';
 class Container extends React.Component {
   constructor() {
     super();
-    const answers = _.shuffle(restaurants);
+    const answers = _.shuffle(got);
     const answer = answers.pop();
     // console.log(answer);
     this.state = {

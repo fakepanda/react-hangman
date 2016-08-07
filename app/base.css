@@ -1,15 +1,14 @@
-@import url(//fonts.googleapis.com/css?family=Inconsolata);
-
+body {
+  font-family: "Times New Roman", Times, serif;
+}
 .answer {
-  /*width: 100%;
-  height: 100%;*/
   display: flex;
 }
 
 .answer-char {
-  font-family: Inconsolata;
+  font-family: Inconsolata, "Courier New", Courier, monospace;
   font-size: 64px;
-  width: 32px;
+  width: 33px;
   margin: 4px;
 }
 
