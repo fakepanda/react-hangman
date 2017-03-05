@@ -24,10 +24,19 @@ class Container extends React.Component {
       gameState: 'play', //TODO: throw in constant file
     };
     this.revealLetter = this.revealLetter.bind(this);
+    this.nextGame = this.nextGame.bind(this);
   }
 
-  getNextAnswer() {
-    return this.state.answers.pop();
+  nextGame() {
+    const answers = _.clone(this.state.answers);
+    const answer = answers.pop();
+    this.setState({
+      answers,
+      answer,
+      revealed: [],
+      incorrectCount: 0,
+      gameState: 'play',
+    });
   }
 
   /**
@@ -69,6 +78,7 @@ class Container extends React.Component {
         />
         <Output
           gameState={this.state.gameState}
+          nextGame={this.nextGame}
         />
         <Answer
           answer={this.state.answer}

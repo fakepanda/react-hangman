@@ -8,7 +8,7 @@ const Output = (props) => {
   } else if (props.gameState === 'win' || props.gameState === 'lose') {
     output = (
       <div className="output">
-        <button onClick={this.props.nextGame}>Play Again</button>
+        <button onClick={props.nextGame}>Play Again</button>
       </div>
     );
   }
