@@ -1,7 +1,7 @@
 import React from 'react';
 
 /**
- * Count down timer displaying the remaining time till the game ends.
+ * Display Hangman.
  */
 const Hangman = (props) => {
   let ouch = ' ';

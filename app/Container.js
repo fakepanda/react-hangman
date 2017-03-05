@@ -21,7 +21,7 @@ class Container extends React.Component {
       answer,
       revealed: [],
       incorrectCount: 0,
-      gameState: 'play',
+      gameState: 'play', //TODO: throw in constant file
     };
     this.revealLetter = this.revealLetter.bind(this);
   }
